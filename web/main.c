@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "helper/createfile.h"
 
 typedef struct {
     char* url;
@@ -6,9 +9,7 @@ typedef struct {
 
 
 
-int main() {
-
-
-
+int main(int argc, char* argv[]) {
+    createFile(&argv[1]);
     return 0;
 }
