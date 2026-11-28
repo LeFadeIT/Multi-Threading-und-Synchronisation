@@ -1,3 +1,14 @@
+/**************************************************************
+* main.c
+* Funktion: Erstellt die Files und  Threads
+* Autor: Eileen Heptner, Mike Wagener
+* Historie:
+* 2026/11/24: erste ausgaben mit threads
+* 2020/11/28: fertigstellung
+* To Do:
+*************************************************************/
+
+
 #include <pthread.h>
 #include <stdio.h>
 #include <string.h>
@@ -32,8 +43,6 @@ void *reader(void *arg) {
     queue_finish(ra->q);
     return NULL;
 }
-
- // oben bei den Includes ergänzen
 
 
 

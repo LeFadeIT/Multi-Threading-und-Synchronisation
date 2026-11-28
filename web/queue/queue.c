@@ -2,6 +2,15 @@
 // Created by mikwagen on 28.11.26.
 //
 
+/**************************************************************
+* queue.c
+* Funktion: erstellt eine Queue und verwaltet diese
+* Autor: Eileen Heptner, Mike Wagener
+* Historie:
+* 2026/11/24: Queue erstellen, Queue_push, queue_pop, queue_finish. queue_delete
+* To Do:
+*************************************************************/
+
 #include "queue.h"
 #include <stdio.h>
 #include <stdlib.h>
