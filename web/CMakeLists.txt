@@ -4,4 +4,5 @@ project(Blatt6 C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Blatt6
-        main.c)
+        main.c
+        helper/urls.h)

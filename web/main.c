@@ -1,15 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "helper/createfile.h"
-
-typedef struct {
-    char* url;
-    struct URLS* next;
-} URLS;
-
-
-
+#include "include/web_request.h"
+#include "helper/fileHandler.h"
 int main(int argc, char* argv[]) {
-    createFile(&argv[1]);
+
+    webreq_init(argc, argv);
+
+
+    createFile(argv);
+    writeToFile(argv, argc);
     return 0;
 }
