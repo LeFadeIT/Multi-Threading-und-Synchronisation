@@ -34,16 +34,14 @@ void writeToFile(char* argv[], int argc) {
     }
 }
 
-void readFromFile(char* argv[]) {
+void readFromFileAndPutInQueue(char* argv[]) {
     FILE* fd_in;
     if (!(fd_in = fopen(argv[1], "r"))) {
         perror("failed to open input file");
         exit(EXIT_FAILURE);
     }
-
     char line[1024];
     while (fgets(line, sizeof line, fd_in)) {
-
         line[strcspn(line, "\r\n")] = '\0';
     }
 }

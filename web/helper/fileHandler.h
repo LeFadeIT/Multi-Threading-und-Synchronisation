@@ -8,5 +8,5 @@
 void createFolder();
 void createFile(char* argv[]);
 void writeToFile(char* argv[], int argc);
-
+void readFromFileAndPutInQueue(char* argv[]);
 #endif //BLATT6_CREATEFILE_H
