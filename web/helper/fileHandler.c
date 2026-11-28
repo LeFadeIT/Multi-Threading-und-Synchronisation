@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 void createFile(char* argv[]) {
     FILE* fd_in;
     if (!(fd_in = fopen(argv[1], "w"))) {
@@ -35,7 +34,7 @@ void writeToFile(char* argv[], int argc) {
     }
 }
 
-URLS* readFromFile(char* argv[]) {
+void readFromFile(char* argv[]) {
     FILE* fd_in;
     if (!(fd_in = fopen(argv[1], "r"))) {
         perror("failed to open input file");

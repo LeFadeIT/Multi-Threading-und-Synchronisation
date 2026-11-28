@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Blatt6
         main.c
-        helper/urls.h)
+        helper/urls.h
+        queue/queue.c
+        queue/queue.h)
